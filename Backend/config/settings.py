@@ -33,6 +33,9 @@ INSTALLED_APPS = [
     # Local
     'accounts',
     'pages',
+
+    #API
+    'rest_framework',
 ]
 
 # MIDDLEWARE
