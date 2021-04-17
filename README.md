@@ -2,7 +2,7 @@
 
 Django Site with REST framwork React.JS
 
-### Stuts - Incomplete
+### Status - Incomplete
 
 ## Built using a Modern stack 💎
 
