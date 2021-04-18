@@ -45,8 +45,14 @@ INSTALLED_APPS = [
     'adminsortable',
     'rest_framework',
     'rest_framework.authtoken',
+
+    "allauth",
+    "allauth.account",
+    "allauth.socialaccount",
     'dj_rest_auth',
     'dj_rest_auth.registration',
+
+
     'django_extensions',
     
 ]
