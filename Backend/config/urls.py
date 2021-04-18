@@ -19,10 +19,31 @@ from rest_framework import routers
 from django.conf import settings
 from django.conf.urls.static import static
 
-from accounts.api import *
+from accounts.api import (
+    UserViewSet,
+    AvatarViewSet,
+    AuthSetup,
+)
+
+router = routers.DefaultRouter()
+router.register(r"avatars", AvatarViewSet)
+router.register(r"users", UserViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("api/", include(router.urls)),
+    path("api-auth/", include("rest_framework.urls")),
+    path("auth/", include("dj_rest_auth.urls")),
+    path("auth/registration/", include("dj_rest_auth.registration.urls")),
+    path("auth/setup/", AuthSetup.as_view(), name="auth-setup"),
     # path('api/', include('accounts.urls')),
     
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+if settings.DEBUG:
+    try:
+        import debug_toolbar
+
+        urlpatterns = [path("__debug__/", include(debug_toolbar.urls))] + urlpatterns
+    except ModuleNotFoundError:
+        pass
