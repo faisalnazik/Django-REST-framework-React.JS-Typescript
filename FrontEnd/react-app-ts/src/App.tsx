@@ -1,10 +1,10 @@
-import React from 'react';
-import logo from './logo.svg';
+// import React from 'react';
+// import logo from './logo.svg';
 import './App.css';
 import { AppContainer } from "./styles"
-import { Column } from "./Column"
-import { Card } from "./Card"
-import { AddNewItem } from "./AddNewItem"
+// import { Column } from "./styled_components/Column"
+// import { Card } from "./styled_components/Card"
+// import { AddNewItem } from "./styled_components/AddNewItem"
 
 const App = () => {
   return (
