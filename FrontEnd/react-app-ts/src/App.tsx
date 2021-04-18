@@ -9,7 +9,7 @@ import { AddNewItem } from "./AddNewItem"
 const App = () => {
   return (
   <AppContainer>
-  <Column text="To Do">
+  {/* <Column text="To Do">
   <Card text="Generate app scaffold" />
   </Column>
   <Column text="In Progress">
@@ -18,7 +18,7 @@ const App = () => {
   <Column text="Done">
   <Card text="Begin to use static typing" />
   </Column>
-  <AddNewItem toggleButtonText="+ Add another list" onAdd={console.log} />
+  <AddNewItem toggleButtonText="+ Add another list" onAdd={console.log} /> */}
   </AppContainer>
 )
 }
