@@ -4,7 +4,7 @@ Django Site with REST framwork React.JS
 
 ### Status - Incomplete
 
-## Built using a Modern stack 💎
+## I am building this application using .....
 
 ### Frontend
 
@@ -18,6 +18,11 @@ Django Site with REST framwork React.JS
 - Django ORM for interacting with the database
 - PostgreSQL
 - Unit tests with Pytest
+
+### Features buit so far.
+
+- Functional User Auth Backend with Django Rest Framework in accounts app using Allauth and PostgreSQL.
+- Tentative File Structure for the FrontEnd with Typescript & React.
 
 ## ⭐️ Support
 

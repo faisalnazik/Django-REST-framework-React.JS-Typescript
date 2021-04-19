@@ -130,5 +130,8 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+
+#Misc.
 BackEnd/requirements/baseold.txt
 BackEnd/requirements/localold.txt
+React-Themes
