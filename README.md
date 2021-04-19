@@ -1,18 +1,18 @@
 # Django-REST-framwork-React.JS
 
-Django Site with REST framwork React.JS
+Django Site with REST framwork React.JS and Typescript
 
 ### Status - Incomplete
 
-## I am building this application using .....
+### I am building this application using .....
 
-### Frontend
+## Frontend
 
 - React with functional components and hooks
 - Redux Toolkit
 - Components & styling with Material-UI and Emotion
 
-### Backend
+## Backend
 
 - Django REST framework for a powerful API
 - Django ORM for interacting with the database
@@ -23,6 +23,10 @@ Django Site with REST framwork React.JS
 
 - Functional User Auth Backend with Django Rest Framework in accounts app using Allauth and PostgreSQL.
 - Tentative File Structure for the FrontEnd with Typescript & React.
+- Fully Functional UI For User Registration and Authentication With React.(Coming Soon)
+- ...
+- ...
+- ...
 
 ## ⭐️ Support
 
