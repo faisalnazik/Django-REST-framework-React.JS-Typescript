@@ -40,13 +40,21 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     
    
-    
+    #Local Apps
     'accounts',
+    'categories',
+    'playlists',
+    'ratings',
+    'tags',
+    'videos',
+
+
+
+    #API 
     'adminsortable',
     'rest_framework',
     'rest_framework.authtoken',
-    'corsheaders', #To Connect API with React App. 
-
+    'corsheaders', # To Connect API with React App. 
     "allauth",
     "allauth.account",
     "allauth.socialaccount",
