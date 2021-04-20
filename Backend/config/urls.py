@@ -18,16 +18,18 @@ from django.urls import path, include
 from rest_framework import routers
 from django.conf import settings
 from django.conf.urls.static import static
-
 from accounts.api import (
     UserViewSet,
     AvatarViewSet,
     AuthSetup,
 )
 
+from categories.api import CategoryList
+
 router = routers.DefaultRouter()
 router.register(r"avatars", AvatarViewSet)
 router.register(r"users", UserViewSet)
+router.register(r"categories", CategoryList)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -36,6 +38,7 @@ urlpatterns = [
     path("auth/", include("dj_rest_auth.urls")),
     path("auth/registration/", include("dj_rest_auth.registration.urls")),
     path("auth/setup/", AuthSetup.as_view(), name="auth-setup"),
+    # path('categories/', include('categories.urls')),
     # path('api/', include('accounts.urls')),
     
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
