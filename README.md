@@ -6,13 +6,11 @@ Django Site with REST framwork React.JS and Typescript
 
 ### API ROOT TILL NOW
 
-{
-"avatars": "http://localhost:8000/api/avatars/",
-"categories": "http://localhost:8000/api/categories/",
-"playlists": "http://localhost:8000/api/playlists/",
-"playlist-items": "http://localhost:8000/api/playlist-items/",
-"related": "http://localhost:8000/api/related/"
-}
+    http://localhost:8000/api/avatars/
+    http://localhost:8000/api/categories/
+    http://localhost:8000/api/playlists/
+    http://localhost:8000/api/playlist-items/
+    http://localhost:8000/api/related/
 
 ## I am building this application using .....
 
