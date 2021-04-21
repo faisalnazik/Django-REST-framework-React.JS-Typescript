@@ -4,7 +4,7 @@ Django Site with REST framwork React.JS and Typescript
 
 ### Status - Incomplete (But you can run by installing the requirements/local.txt , then migrate the db and just load on localhost:8000/api/)
 
-# API ROOT TILL NOW
+### API ROOT TILL NOW
 
 {
 "avatars": "http://localhost:8000/api/avatars/",
