@@ -4,7 +4,7 @@ Django Site with REST framwork React.JS and Typescript
 
 ### Status - Incomplete
 
-### I am building this application using .....
+## I am building this application using .....
 
 ## Frontend
 
@@ -19,10 +19,11 @@ Django Site with REST framwork React.JS and Typescript
 - PostgreSQL
 - Unit tests with Pytest
 
-### Features buit so far.
+### Features built so far.
 
 - Functional User Auth Backend with Django Rest Framework in accounts app using Allauth and PostgreSQL.
 - Tentative File Structure for the FrontEnd with Typescript & React.
+-
 - Fully Functional UI For User Registration and Authentication With React.(Coming Soon)
 - ...
 - ...

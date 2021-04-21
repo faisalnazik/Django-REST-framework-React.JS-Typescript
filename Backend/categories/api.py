@@ -19,7 +19,7 @@ from .models import Category
 
 User = get_user_model()
 
-class CategoryList(mixins.RetrieveModelMixin, mixins.UpdateModelMixin, GenericViewSet,):
+class CategoryList(mixins.RetrieveModelMixin, GenericViewSet,):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
     permission_classes = [ReadOnly]

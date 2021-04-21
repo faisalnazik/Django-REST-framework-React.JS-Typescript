@@ -25,11 +25,16 @@ from accounts.api import (
 )
 
 from categories.api import CategoryList
+from playlists.api import PlaylistViewSet, PlaylistItemViewSet,\
+     PlaylistRelatedViewSet
 
 router = routers.DefaultRouter()
 router.register(r"avatars", AvatarViewSet)
 router.register(r"users", UserViewSet)
 router.register(r"categories", CategoryList)
+router.register(r"playlists", PlaylistViewSet)
+router.register(r"playlist-items", PlaylistItemViewSet)
+router.register(r"related", PlaylistRelatedViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),

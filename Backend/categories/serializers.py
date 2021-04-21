@@ -4,6 +4,7 @@ from rest_framework import serializers
 from rest_framework.validators import UniqueValidator
 from tags.serializers import TaggedItemSerializer
 from .models import Category
+from tags.models import TaggedItem
 
 
 
@@ -17,8 +18,8 @@ class CategorySerializer(serializers.ModelSerializer):
         model = Category
         fields = ['title',
                 'slug',
-                'active',
-                'timestamp',
-                'updated',
+                # 'active',
+                # 'timestamp',
+                # 'updated',
                 # 'tags'
             ]
