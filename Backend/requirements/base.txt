@@ -60,3 +60,4 @@ urllib3==1.26.4
 virtualenv==20.4.3
 whitenoise==5.2.0
 django-cors-headers==3.7.0
+coreapi==2.3.3

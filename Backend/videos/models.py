@@ -1,3 +1,4 @@
+import uuid 
 from django.db import models
 from django.db.models.signals import pre_save
 from django.utils import timezone
@@ -22,9 +23,13 @@ class VideoManager(models.Manager):
         return self.get_queryset().published()
 
 class Video(models.Model):
+    # id = models.UUIDField( 
+    #     primary_key=True,
+    #     default=uuid.uuid4,
+    #     editable=False)
     title = models.CharField(max_length=220)
     description = models.TextField(blank=True, null=True)
-    slug = models.SlugField(blank=True, null=True) # 'this-is-my-video'
+    slug = models.SlugField(blank=True, null=True) 
     video_id = models.CharField(max_length=220, unique=True)
     active = models.BooleanField(default=True)
     timestamp = models.DateTimeField(auto_now_add=True)

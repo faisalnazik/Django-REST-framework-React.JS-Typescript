@@ -18,6 +18,8 @@ from django.urls import path, include
 from rest_framework import routers
 from django.conf import settings
 from django.conf.urls.static import static
+from rest_framework.documentation import include_docs_urls
+from rest_framework.schemas import get_schema_view
 from accounts.api import (
     UserViewSet,
     AvatarViewSet,
@@ -28,13 +30,19 @@ from categories.api import CategoryList
 from playlists.api import PlaylistViewSet, PlaylistItemViewSet,\
      PlaylistRelatedViewSet
 
+from videos.api import VideoViewSet
+
 router = routers.DefaultRouter()
 router.register(r"avatars", AvatarViewSet)
 router.register(r"users", UserViewSet)
 router.register(r"categories", CategoryList)
 router.register(r"playlists", PlaylistViewSet)
+router.register(r"videos", VideoViewSet)
 router.register(r"playlist-items", PlaylistItemViewSet)
 router.register(r"related", PlaylistRelatedViewSet)
+
+
+schema_view = get_schema_view(title='Rest API')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -43,6 +51,8 @@ urlpatterns = [
     path("auth/", include("dj_rest_auth.urls")),
     path("auth/registration/", include("dj_rest_auth.registration.urls")),
     path("auth/setup/", AuthSetup.as_view(), name="auth-setup"),
+    path('docs/', include_docs_urls(title='Rest API')),
+    path('schema/', schema_view),
     # path('categories/', include('categories.urls')),
     # path('api/', include('accounts.urls')),
     

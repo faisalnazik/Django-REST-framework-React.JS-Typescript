@@ -8,9 +8,13 @@ Django Site with REST framwork React.JS and Typescript
 
     http://localhost:8000/api/avatars/
     http://localhost:8000/api/categories/
+    http://localhost:8000/api/videos/
     http://localhost:8000/api/playlists/
     http://localhost:8000/api/playlist-items/
     http://localhost:8000/api/related/
+
+- To browse documentation
+  http://localhost:8000/docs/
 
 ## I am building this application using .....
 

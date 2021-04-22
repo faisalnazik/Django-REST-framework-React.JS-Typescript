@@ -174,6 +174,7 @@ REST_FRAMEWORK = {
 }
 
 REST_AUTH_SERIALIZERS = {"TOKEN_SERIALIZER": "accounts.serializers.TokenSerializer"}
+REST_FRAMEWORK = { 'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema' }
 
 # For django.contrib.sites
 SITE_ID = 1
