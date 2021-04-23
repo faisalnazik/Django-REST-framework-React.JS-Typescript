@@ -8,7 +8,7 @@ class PlaylistSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Playlist
-        fields = [
+        fields = ['id',
         'title',
         'slug'
         ]
@@ -19,7 +19,8 @@ class PlaylistItemSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = PlaylistItem
-        fields = ['playlist',
+        fields = ['id',
+                'playlist',
                 'video'
         ]
 class PlaylistRelatedSerializer(serializers.ModelSerializer):
@@ -27,6 +28,7 @@ class PlaylistRelatedSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = PlaylistRelated
-        fields = ['playlist',
+        fields = ['id',
+                'playlist',
                 'related'
         ]

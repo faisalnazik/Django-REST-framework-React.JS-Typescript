@@ -16,7 +16,8 @@ class VideoSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Video
-        fields = ['title',
+        fields = ['id',
+                'title',
                 'description',
                 'video_id'
                 # 'timestamp',
