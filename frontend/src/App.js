@@ -1,21 +1,11 @@
-import React from 'react';
-
-
+import React from "react";
 
 // import logo from './logo.svg';
-import './App.css';
-import { AppContainer } from "./styles"
-
-import PrimarySearchAppBar from './components/AppBar';
-import ContainedButtons from './components/DefaultButton';
-
+import "./App.css";
+import { AppContainer } from "./styles";
 
 function App() {
-  return (
-    <AppContainer>
-      <PrimarySearchAppBar/>
-    </AppContainer>
-  );
+  return <AppContainer></AppContainer>;
 }
 
 export default App;
