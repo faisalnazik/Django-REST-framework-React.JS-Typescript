@@ -134,5 +134,6 @@ dmypy.json
 #Misc.
 BackEnd/requirements/baseold.txt
 BackEnd/requirements/localold.txt
+Frontend/testapp
 
 React-Themes
