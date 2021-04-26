@@ -2,7 +2,19 @@
 
 Django Site with REST framwork React.JS and Typescript
 
-### Status - Incomplete (But you can run by installing the requirements/local.txt , then migrate the db and just load on localhost:8000/api/)
+# What this project will do ?
+
+This project manages all data through django-admin / Django REST Framework including User Authentication / Registration through API to Frontend React App with Typescript Templates, mainly for
+a movie Streaming Site.
+
+### Status - Incomplete (But you can still run backend by installing the requirements/local.txt , then migrate the db and just load on localhost:8000/api/)
+
+### To run Frontend React App You have to Install dependencies by running commands in my-app-ts directory
+
+- $ npm install
+- $ npm start
+
+Load react app on http://localhost:3000
 
 ### API ROOT TILL NOW
 
@@ -15,6 +27,10 @@ Django Site with REST framwork React.JS and Typescript
 
 - To browse documentation
   http://localhost:8000/docs/
+- For User Registration
+  http://localhost:8000/auth/registration/
+- For User Detail
+  http://localhost:8000/auth/user/
 
 ## I am building this application using .....
 
@@ -34,12 +50,13 @@ Django Site with REST framwork React.JS and Typescript
 ### Features built so far.
 
 - Functional User Auth Backend with Django Rest Framework in accounts app using Allauth and PostgreSQL.
-- Tentative File Structure for the FrontEnd with Typescript & React.
--
+- Frontend Layout with typscript including material UI PrimarySearchAppBar
 - Fully Functional UI For User Registration and Authentication With React.(Coming Soon)
 - ...
 - ...
 - ...
+
+### If you need any Help raise the issue and I will respond soon. If you wanna collaborate.You're welcome.
 
 ## ⭐️ Support
 
