@@ -16,7 +16,7 @@ from rest_framework.views import APIView
 from rest_framework.viewsets import GenericViewSet
 from rest_framework.viewsets import ReadOnlyModelViewSet
 
-from accounts.models import Avatar
+from .models import Avatar
 from .permissions import IsSelf
 from .serializers import (
     AvatarSerializer,

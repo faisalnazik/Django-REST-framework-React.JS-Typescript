@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'ratings',
     'tags',
     'videos',
+    'movies',
 
 
 
