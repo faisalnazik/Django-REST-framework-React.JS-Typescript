@@ -36,17 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-/* .ButtonContainer {
-  background-color: #282c34;
-  min-height: 90vh;
-  min-width: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: right;
-  justify-content: center;
-} */
-
-.SimpleCard {
-  background-color: #282c34;
-}
