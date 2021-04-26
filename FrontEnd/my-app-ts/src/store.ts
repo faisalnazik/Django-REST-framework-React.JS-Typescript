@@ -9,7 +9,7 @@ import toastReducer from "./features/toast/ToastSlice";
 import responsiveReducer from "./features/responsive/ResponsiveSlice";
 
 import authInitialState from "./features/auth/AuthSlice";
-import { setupInterceptors } from "api";
+import { setupInterceptors } from "./api";
 
 export const rootReducer = combineReducers({
   auth: authReducer,

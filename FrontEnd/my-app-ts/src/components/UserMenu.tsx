@@ -53,27 +53,14 @@ const UserMenu = () => {
 
   return (
     <>
-      <Button
-        aria-controls="user-menu"
-        aria-haspopup="true"
-        onClick={handleClick}
-        data-testid="user-menu"
-        css={css`
-          min-width: 1.5rem;
-          padding: 0;
-          border-radius: 50%;
-          &:hover {
-            background-color: initial;
-          }
-        `}
-      >
-        <Avatar
+      <Button>
+        {/* <Avatar
           css={avatarStyles}
           src={user?.photo_url || ""}
           alt="user-avatar"
         >
           {user?.username.charAt(0)}
-        </Avatar>
+        </Avatar> */}
       </Button>
       <Menu
         id="user-menu"
