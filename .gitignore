@@ -131,12 +131,6 @@ dmypy.json
 .pyre/
 
 
-#Misc.
-BackEnd/requirements/baseold.txt
-BackEnd/requirements/localold.txt
-Frontend/my-app-ts
-Frontend/testapp
-Frontend/Try-React.js
 
 
 React-Themes

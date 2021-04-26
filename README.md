@@ -9,13 +9,6 @@ a movie Streaming Site.
 
 ### Status - Incomplete (But you can still run backend by installing the requirements/local.txt , then migrate the db and just load on localhost:8000/api/)
 
-### To run Frontend React App You have to Install dependencies by running commands in my-app-ts directory
-
-- $ npm install
-- $ npm start
-
-Load react app on http://localhost:3000
-
 ### API ROOT TILL NOW
 
     http://localhost:8000/api/avatars/
@@ -25,7 +18,7 @@ Load react app on http://localhost:3000
     http://localhost:8000/api/playlist-items/
     http://localhost:8000/api/related/
 
-- To browse documentation
+- To browse API documentation
   http://localhost:8000/docs/
 - For User Registration
   http://localhost:8000/auth/registration/
@@ -50,7 +43,6 @@ Load react app on http://localhost:3000
 ### Features built so far.
 
 - Functional User Auth Backend with Django Rest Framework in accounts app using Allauth and PostgreSQL.
-- Frontend Layout with typscript including material UI PrimarySearchAppBar
 - Fully Functional UI For User Registration and Authentication With React.(Coming Soon)
 - ...
 - ...
