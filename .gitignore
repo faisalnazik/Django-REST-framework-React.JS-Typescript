@@ -134,7 +134,7 @@ dmypy.json
 #Misc.
 BackEnd/requirements/baseold.txt
 BackEnd/requirements/localold.txt
-Frontend/my-app
+Frontend/my-app-ts
 Frontend/testapp
 Frontend/Try-React.js
 
