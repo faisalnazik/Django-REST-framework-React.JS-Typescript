@@ -1,6 +1,6 @@
 import { createMuiTheme } from "@material-ui/core/styles";
-import { Priority, PriorityValue } from "types";
-import { PRIO1, PRIO2, PRIO3, PRIMARY_MAIN } from "utils/colors";
+import { Priority, PriorityValue } from "./types";
+import { PRIO1, PRIO2, PRIO3, PRIMARY_MAIN } from "./utils/colors";
 import { grey } from "@material-ui/core/colors";
 
 export const TOAST_AUTO_HIDE_DURATION = 4000;

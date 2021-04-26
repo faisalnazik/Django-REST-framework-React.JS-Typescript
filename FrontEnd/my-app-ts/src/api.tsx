@@ -1,5 +1,5 @@
 import axios from "axios";
-import { logout } from "./features/auth/AuthSlice";
+// import { logout } from "./features/auth/AuthSlice";
 // Config global defaults for axios/django
 axios.defaults.xsrfHeaderName = "X-CSRFToken";
 axios.defaults.xsrfCookieName = "csrftoken";
@@ -8,10 +8,10 @@ export const setupInterceptors = (store: any) => {
   axios.interceptors.response.use(
     (response) => response,
     (error) => {
-      // Handle expired sessions
-      if (error.response && error.response.status === 401) {
-        store.dispatch(logout());
-      }
+      // // Handle expired sessions
+      // if (error.response && error.response.status === 401) {
+      //   store.dispatch(logout());
+      // }
       return Promise.reject(error);
     }
   );
