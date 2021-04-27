@@ -31,10 +31,14 @@ from playlists.api import PlaylistViewSet, PlaylistItemViewSet,\
      PlaylistRelatedViewSet
 
 from videos.api import VideoViewSet
+from movies.api import MovieViewSet
+
+
 
 router = routers.DefaultRouter()
 router.register(r"avatars", AvatarViewSet)
 router.register(r"users", UserViewSet)
+router.register(r"movies", MovieViewSet)
 router.register(r"categories", CategoryList)
 router.register(r"playlists", PlaylistViewSet)
 router.register(r"videos", VideoViewSet)
@@ -53,8 +57,7 @@ urlpatterns = [
     path("auth/setup/", AuthSetup.as_view(), name="auth-setup"),
     path('docs/', include_docs_urls(title='Rest API')),
     path('schema/', schema_view),
-    # path('categories/', include('categories.urls')),
-    # path('api/', include('accounts.urls')),
+
     
     
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
