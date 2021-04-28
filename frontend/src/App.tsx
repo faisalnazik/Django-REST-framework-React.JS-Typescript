@@ -12,7 +12,7 @@ import { About } from "./About";
 import { NoMatch } from "./NoMatch";
 import Sidebar from "./components/Sidebar";
 import BasicTable from "./components/DataList";
-
+import { IsolatedTable } from "./webservices/IsolatedTable";
 function App() {
   return (
     <React.Fragment>
@@ -20,7 +20,10 @@ function App() {
         <NavigationBar />
         {/* <AppContainer></AppContainer> */}
 
-        <Sidebar />
+        {/* <Sidebar /> */}
+        <div className="IsolatedTable">
+          <IsolatedTable />
+        </div>
       </Router>
     </React.Fragment>
   );
