@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import ListDividers from "./ListItemDivider";
 /* This defines the actual bar going down the screen */
 const StyledSideNav = styled.div`
   position: fixed;

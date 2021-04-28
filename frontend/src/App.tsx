@@ -11,12 +11,15 @@ import { Home } from "./Home";
 import { About } from "./About";
 import { NoMatch } from "./NoMatch";
 import Sidebar from "./components/Sidebar";
+import BasicTable from "./components/DataList";
 
 function App() {
   return (
     <React.Fragment>
       <Router>
         <NavigationBar />
+        {/* <AppContainer></AppContainer> */}
+
         <Sidebar />
       </Router>
     </React.Fragment>

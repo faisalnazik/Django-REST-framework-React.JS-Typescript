@@ -37,3 +37,13 @@ export const CardContainer = styled.div`
   border-radius: 3px;
   box-shadow: #091e4240 0px 1px 0px 0px;
 `;
+
+export const DataListContainer = styled.div`
+  background-color: #ebecf0;
+  width: 900px;
+  min-height: 400px;
+  margin-right: 20px;
+  border-radius: 3px;
+  padding: 8px 8px;
+  flex-grow: 0;
+`;
