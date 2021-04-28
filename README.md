@@ -11,6 +11,8 @@ a movie Streaming Site.
 
 ### API ROOT TILL NOW
 
+![screenshot](https://github.com/faisalnazik/Django-REST-framework-React.JS-Typescript/blob/master/Backend/APIRoot.png)
+
     http://localhost:8000/api/avatars/
     http://localhost:8000/api/categories/
     http://localhost:8000/api/videos/
@@ -24,6 +26,10 @@ a movie Streaming Site.
   http://localhost:8000/auth/registration/
 - For User Detail
   http://localhost:8000/auth/user/
+
+## Frontend App Layout till now
+
+![screenshot](https://github.com/faisalnazik/Django-REST-framework-React.JS-Typescript/blob/master/frontend/HomePage.png)
 
 ## I am building this application using .....
 
