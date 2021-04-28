@@ -1,5 +1,8 @@
 import styled from "styled-components";
 
+// BackGroudColors = 0b1a21 Primary , 324048 Light , 001624 Dark
+// Text colors = fffff0 light
+
 export const AppContainer = styled.div`
   align-items: flex-start;
   background-color: #3179ba;
