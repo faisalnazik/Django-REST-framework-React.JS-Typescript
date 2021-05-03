@@ -9,6 +9,10 @@ a movie Streaming Site.
 
 ### Status - Incomplete (But you can still run backend by installing the requirements/local.txt , then migrate the db and just load on localhost:8000/api/)
 
+## Frontend App Layout till now
+
+![screenshot](https://github.com/faisalnazik/Django-REST-framework-React.JS-Typescript/blob/master/homepage.png)
+
 ### API ROOT TILL NOW
 
 ![screenshot](https://github.com/faisalnazik/Django-REST-framework-React.JS-Typescript/blob/master/Backend/APIRoot.png)
@@ -26,10 +30,6 @@ a movie Streaming Site.
   http://localhost:8000/auth/registration/
 - For User Detail
   http://localhost:8000/auth/user/
-
-## Frontend App Layout till now
-
-![screenshot](https://github.com/faisalnazik/Django-REST-framework-React.JS-Typescript/blob/master/frontend/HomePage.png)
 
 ## I am building this application using .....
 
