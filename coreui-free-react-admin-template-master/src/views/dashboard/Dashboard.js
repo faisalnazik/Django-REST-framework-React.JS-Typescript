@@ -1,4 +1,5 @@
-import React, { lazy } from "react";
+import React, { lazy, Component } from "react";
+import { RestDataSource } from "../../webservices/RESTdataSource";
 import {
   CBadge,
   CButton,
@@ -19,14 +20,69 @@ import MainChartExample from "../charts/MainChartExample.js";
 const WidgetsDropdown = lazy(() => import("../widgets/WidgetsDropdown.js"));
 const WidgetsBrand = lazy(() => import("../widgets/WidgetsBrand.js"));
 
+class IsolatedTable extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      movies: [],
+    };
+    this.dataSource = new RestDataSource("http://localhost:8000/api/movies");
+  }
+  render() {
+    return (
+      <>
+        <CRow>
+          <CCol>
+            <CCard>
+              <CCardHeader>Data List</CCardHeader>
+              <CCardBody>
+                <br />
+
+                <table className="table table-hover table-outline mb-0 d-none d-sm-table">
+                  <thead className="thead-light">
+                    <tr>
+                      <th className="text-center">
+                        <CIcon name="cil-list-numbered" />
+                      </th>
+                      <th>Title</th>
+                      <th className="text-center">Category</th>
+                      <th>Cast</th>
+                      <th className="text-center">IMDB Ratings</th>
+                      <th>Short Liner</th>
+                      <th className="text-center">Year</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {this.state.movies.map((m) => (
+                      <tr key={m.id}>
+                        <td className="text-center">{m.id}</td>
+                        <td>{m.title}</td>
+                        <td>{}</td>
+                        <td>{}</td>
+                        <td className="text-center">{m.imdb_rating}</td>
+                        <td>{m.body}</td>
+                        <td>{}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </CCardBody>
+            </CCard>
+          </CCol>
+        </CRow>
+      </>
+    );
+  }
+  componentDidMount() {
+    this.dataSource.GetData((data) => this.setState({ movies: data }));
+  }
+}
+
 const Dashboard = () => {
   return (
     <>
-      {/* <WidgetsDropdown /> */}
-
-      {/* <WidgetsBrand withCharts /> */}
-
-      <CRow>
+      <IsolatedTable />
+      {/* <CRow>
         <CCol>
           <CCard>
             <CCardHeader>Data List</CCardHeader>
@@ -101,9 +157,8 @@ const Dashboard = () => {
             </CCardBody>
           </CCard>
         </CCol>
-      </CRow>
+      </CRow> */}
     </>
   );
 };
-
 export default Dashboard;
