@@ -1,5 +1,5 @@
 import axios from "axios";
-
+import { logout } from "./views/auth/AuthSlice";
 // Config global defaults for axios/django
 axios.defaults.xsrfHeaderName = "X-CSRFToken";
 axios.defaults.xsrfCookieName = "csrftoken";
