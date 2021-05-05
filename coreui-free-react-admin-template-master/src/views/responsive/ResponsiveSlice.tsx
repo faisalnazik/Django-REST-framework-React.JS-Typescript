@@ -1,27 +1,27 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { RootState } from "./../../store";
+// import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+// import { RootState } from "./../../store";
+import { AxiosError } from "axios";
+// interface InitialState {
+//   mobileDrawerOpen: boolean;
+// }
 
-interface InitialState {
-  mobileDrawerOpen: boolean;
-}
+// export const initialState: InitialState = {
+//   mobileDrawerOpen: false,
+// };
 
-export const initialState: InitialState = {
-  mobileDrawerOpen: false,
-};
+// export const slice = createSlice({
+//   name: "responsive",
+//   initialState,
+//   reducers: {
+//     setMobileDrawerOpen: (state, action: PayloadAction<boolean>) => {
+//       state.mobileDrawerOpen = action.payload;
+//     },
+//   },
+// });
 
-export const slice = createSlice({
-  name: "responsive",
-  initialState,
-  reducers: {
-    setMobileDrawerOpen: (state, action: PayloadAction<boolean>) => {
-      state.mobileDrawerOpen = action.payload;
-    },
-  },
-});
+// export const { setMobileDrawerOpen } = slice.actions;
 
-export const { setMobileDrawerOpen } = slice.actions;
+// export const mobileDrawerOpen = (store: RootState) =>
+//   store.responsive.mobileDrawerOpen;
 
-export const mobileDrawerOpen = (store: RootState) =>
-  store.responsive.mobileDrawerOpen;
-
-export default slice.reducer;
+// export default slice.reducer;
