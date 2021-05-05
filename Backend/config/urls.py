@@ -24,6 +24,7 @@ from accounts.api import (
     UserViewSet,
     AvatarViewSet,
     AuthSetup,
+    GuestRegistration,
 )
 
 from categories.api import CategoryList
@@ -55,6 +56,7 @@ urlpatterns = [
     path("auth/", include("dj_rest_auth.urls")),
     path("auth/registration/", include("dj_rest_auth.registration.urls")),
     path("auth/setup/", AuthSetup.as_view(), name="auth-setup"),
+    path("auth/guest/", GuestRegistration.as_view(), name="guest-registration"),
     path('docs/', include_docs_urls(title='Rest API')),
     path('schema/', schema_view),
 
