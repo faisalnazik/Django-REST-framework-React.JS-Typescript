@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { lazy, Component } from "react";
+
 import {
   CButton,
   CCard,
@@ -11,9 +12,57 @@ import {
   CInputGroup,
   CInputGroupPrepend,
   CInputGroupText,
-  CRow
-} from '@coreui/react'
-import CIcon from '@coreui/icons-react'
+  CRow,
+} from "@coreui/react";
+import CIcon from "@coreui/icons-react";
+
+class Registration extends Component {
+  constructor() {
+    super();
+    this.stat = {
+      username: "",
+      email: "",
+      password1: "",
+      password2: "",
+    };
+    this.username = this.username.blind(this);
+    this.email = this.email.blind(this);
+    this.password1 = this.password1.blind(this);
+    this.password2 = this.password2.blind(this);
+  }
+  username(event) {
+    this.setState({ username: event.target.value });
+  }
+  email(event) {
+    this.setState({ email: event.target.value });
+  }
+  password1(event) {
+    this.setState({ password1: event.target.value });
+  }
+  password2(event) {
+    this.setState({ password2: event.target.value });
+  }
+  reg(event) {
+    fetch("http://localhost:8000/auth/registration/", {
+      method: "post",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        username: this.state.username,
+        email: this.state.email,
+        password1: this.state.password1,
+        password2: this.state.password2,
+      }),
+    })
+      .then((Response) => Response.json())
+      .then((Result) => {
+        if (Result.Status == "Success") this.props.historu.push("/");
+        else alert("Sorry !! Un-authenticated User!!!!!");
+      });
+  }
+}
 
 const Register = () => {
   return (
@@ -32,13 +81,21 @@ const Register = () => {
                         <CIcon name="cil-user" />
                       </CInputGroupText>
                     </CInputGroupPrepend>
-                    <CInput type="text" placeholder="Username" autoComplete="username" />
+                    <CInput
+                      type="text"
+                      placeholder="Username"
+                      autoComplete="username"
+                    />
                   </CInputGroup>
                   <CInputGroup className="mb-3">
                     <CInputGroupPrepend>
                       <CInputGroupText>@</CInputGroupText>
                     </CInputGroupPrepend>
-                    <CInput type="text" placeholder="Email" autoComplete="email" />
+                    <CInput
+                      type="text"
+                      placeholder="Email"
+                      autoComplete="email"
+                    />
                   </CInputGroup>
                   <CInputGroup className="mb-3">
                     <CInputGroupPrepend>
@@ -46,7 +103,11 @@ const Register = () => {
                         <CIcon name="cil-lock-locked" />
                       </CInputGroupText>
                     </CInputGroupPrepend>
-                    <CInput type="password" placeholder="Password" autoComplete="new-password" />
+                    <CInput
+                      type="password"
+                      placeholder="Password"
+                      autoComplete="new-password"
+                    />
                   </CInputGroup>
                   <CInputGroup className="mb-4">
                     <CInputGroupPrepend>
@@ -54,18 +115,28 @@ const Register = () => {
                         <CIcon name="cil-lock-locked" />
                       </CInputGroupText>
                     </CInputGroupPrepend>
-                    <CInput type="password" placeholder="Repeat password" autoComplete="new-password" />
+                    <CInput
+                      type="password"
+                      placeholder="Repeat password"
+                      autoComplete="new-password"
+                    />
                   </CInputGroup>
-                  <CButton color="success" block>Create Account</CButton>
+                  <CButton color="success" block>
+                    Create Account
+                  </CButton>
                 </CForm>
               </CCardBody>
               <CCardFooter className="p-4">
                 <CRow>
                   <CCol xs="12" sm="6">
-                    <CButton className="btn-facebook mb-1" block><span>facebook</span></CButton>
+                    <CButton className="btn-facebook mb-1" block>
+                      <span>facebook</span>
+                    </CButton>
                   </CCol>
                   <CCol xs="12" sm="6">
-                    <CButton className="btn-twitter mb-1" block><span>twitter</span></CButton>
+                    <CButton className="btn-twitter mb-1" block>
+                      <span>twitter</span>
+                    </CButton>
                   </CCol>
                 </CRow>
               </CCardFooter>
@@ -74,7 +145,7 @@ const Register = () => {
         </CRow>
       </CContainer>
     </div>
-  )
-}
+  );
+};
 
-export default Register
+export default Register;
