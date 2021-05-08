@@ -24,6 +24,7 @@ export class RestDataSource {
 }
 
 // Available endpoints
+export const API_USER = "http://localhost:8000/auth/user/";
 export const API_LOGIN = "http://localhost:8000/auth/login/";
 export const API_LOGOUT = "http://localhost:8000/auth/logout/";
 export const API_REGISTER = "http://localhost:8000/auth/registration/";

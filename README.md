@@ -31,6 +31,21 @@ a movie Streaming Site.
 - For User Detail
   http://localhost:8000/auth/user/
 
+## To check and run homepage with react app loaded following steps to be followed
+
+// Inside the frontend django app folder run following command
+
+$ npm install
+$ npm run dev
+
+//this will compile all the react app into single index.html which is plugged in config.urls with frontend.views
+
+then ..
+
+in the backend root run following command
+$ python manage.py runserver
+and load this on http://localhost:8000/
+
 ## I am building this application using .....
 
 ## Frontend
@@ -51,7 +66,7 @@ a movie Streaming Site.
 - Functional User Auth Backend with Django Rest Framework in accounts app using Allauth and PostgreSQL.
 - Fully Functional UI For User Registration and Authentication With React.(Coming Soon)
 - Front End App Layout Integrated with API
-- ...
+- Plugged frontend django app Integrated with manually created React App to run Django and React on the Same Port http://localhost:8000/
 - ...
 - ...
 

@@ -33,7 +33,7 @@ from playlists.api import PlaylistViewSet, PlaylistItemViewSet,\
 
 from videos.api import VideoViewSet
 from movies.api import MovieViewSet
-
+from frontend.views import IndexView
 
 
 router = routers.DefaultRouter()
@@ -50,6 +50,7 @@ router.register(r"related", PlaylistRelatedViewSet)
 schema_view = get_schema_view(title='Rest API')
 
 urlpatterns = [
+    path('', IndexView.as_view(), name="home"),
     path('admin/', admin.site.urls),
     path("api/", include(router.urls)),
     path("api-auth/", include("rest_framework.urls")),

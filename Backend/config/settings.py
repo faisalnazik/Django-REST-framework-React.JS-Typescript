@@ -42,12 +42,14 @@ INSTALLED_APPS = [
    
     #Local Apps
     'accounts',
+    'frontend',
     'categories',
     'playlists',
     'ratings',
     'tags',
     'videos',
     'movies',
+    
 
 
 
