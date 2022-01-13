@@ -33,7 +33,7 @@ nodeenv==1.6.0
 oauthlib==3.1.0
 packaging==20.9
 pathspec==0.8.1
-Pillow==8.2.0
+Pillow==9.0.0
 pluggy==0.13.1
 pre-commit==2.12.1
 psycopg2==2.8.6
