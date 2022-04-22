@@ -13,7 +13,7 @@ cryptography==3.4.7
 defusedxml==0.7.1
 distlib==0.3.1
 dj-rest-auth==2.1.4
-Django==3.2.4
+Django==3.2.13
 django-admin-sortable==2.2.3
 django-allauth==0.44.0
 django-extensions==3.1.2
